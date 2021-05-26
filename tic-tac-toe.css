@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    transition: 1s ease;
+    font-family: 'Indie Flower', cursive;
+    background-color: #232333;
+}
+
+.heading {
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    color: aqua;
+}
+
+.sub-heading {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    transform: translateY(-20px);
+}
+
+.game {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+    max-height: 300px;
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+#box {
+    background-color: #232333;
+    color: white;
+    width: 30%;
+    padding-bottom: 0;
+    float: left;
+    height: 20%;
+    font-size: 6em;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255, 0.8);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    animation: chage 5s ease infinite;
+    -moz-transition: all 0.5s;
+}
+
+@keyframes change {
+    0% {
+        border: 1px solid rgb(255, 255, 255, 0.2);
+    }
+
+    25% {
+        border: 1px solid rgb(255, 255, 255, 0.5);
+    }
+
+    50% {
+        border: 1px solid rgb(255, 255, 255, 0.7);
+    }
+
+    100% {
+        border: 1px solid rgb(255, 255, 255, 0.2);
+    }
+}
+
+.one {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    box-shadow: -5px -5px 5px white;
+}
+
+.two {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    box-shadow: 0px -5px 5px white;
+}
+
+.three {
+    border-bottom: 2px solid white;
+    box-shadow: -1px -5px 5px white;
+}
+
+.four {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    box-shadow: -5px 1px 5px white;
+}
+
+.five {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.six {
+    border-bottom: 2px solid white;
+}
+
+.seven {
+    border-right: 2px solid white;
+    box-shadow: -5px 1px 5px white;
+}
+
+.eight {
+    border-right: 2px solid white;
+}
+
+.restart {
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(-40px);
+}
+
+button {
+    padding: 15px;
+    background-image: linear-gradient(90deg, white, skyblue, aqua);
+    color: blue;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-image: linear-gradient(90deg, aqua, skyblue);
+    transform: scale(1.01);
+}
